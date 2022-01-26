@@ -1,0 +1,29 @@
+{
+  "name": "hanburytest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazakova-liza/hanburyTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazakova-liza/hanburyTest/issues"
+  },
+  "homepage": "https://github.com/kazakova-liza/hanburyTest#readme",
+  "dependencies": {
+    "airtable": "^0.11.1",
+    "html-to-text": "^8.1.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.1.0",
+    "save": "^2.4.0",
+    "vercel": "^23.1.2"
+  }
+}
