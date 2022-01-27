@@ -1,16 +1,17 @@
 import connect from './connect.js'
+import config from './config.js'
 import _ from 'lodash'
 import { get, write, truncateTable } from './queries.js'
 
 
+
 const execute = async (action, query = undefined, name = undefined, data = undefined, fields = undefined, truncate = false) => {
-  const db = await connect();
+  const db = await connect(config);
   let records;
 
   try {
     switch (action) {
       case 'runQuery':
-        console.log(query);
         records = await db.query(query.replace('TABLE_NAME_PLACEHOLDER', name));
         return records;
       case 'savedQuery':
