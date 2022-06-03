@@ -12,7 +12,7 @@ const newBase = new Airtable({ apiKey }).base("appkt63OarXpmUC0C");
 
 const toDelete = await getData(newBase, 'fromTsoHosts', "");
 for(let i = 0; i < toDelete.length; i++){
-    await deleteRecord(newBase, 'fromTsoHosts', toDelete[i].id )
+    await deleteRecord(newBase, 'fromTsoHosts', toDelete[3].id )
 }
 
 const connection = await connect(config);

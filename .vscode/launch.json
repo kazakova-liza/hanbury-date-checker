@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src\\getTso.js",
+            //"program": "${workspaceFolder}\\src\\getTso.js",
+            "program": "${workspaceFolder}\\src\\bin.js",
             "console": "integratedTerminal"
         }
     ]

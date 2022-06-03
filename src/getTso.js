@@ -16,8 +16,8 @@ fromTsoHosts.forEach((entry) => {
     let flds = entry.fields
     airT.push({dte:flds.dte, wedding:flds.wedding, id:entry.id} )
 })
-// for(let i = 0; i < toDelete.length; i++){
-//     await deleteRecord(newBase, 'fromTsoHosts', toDelete[i].id )
+// for(let i = 0; i < fromTsoHosts.length; i++){
+     await deleteRecord(newBase, 'fromTsoHosts', fromTsoHosts[3].id )
 // }
 
 const connection = await connect(config);
